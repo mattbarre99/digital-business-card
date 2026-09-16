@@ -250,4 +250,68 @@ body {
 
   }
 
+  /* =========================================
+   TORNA INDIETRO
+   ========================================= */
+
+.back-button {
+
+  width: min(100%, 180px);
+
+  min-height: 30px;
+
+  margin-top: 14px;
+
+  padding: 6px 16px;
+
+  border: 1px solid #111111;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  color: #000000;
+
+  text-decoration: none;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition:
+    background 0.15s ease,
+    transform 0.12s ease;
+}
+
+
+.back-button:hover {
+
+  background: #f7f7f7;
+
+}
+
+
+.back-button:active {
+
+  transform: translateY(1px);
+
+}
+
+
+.back-button:focus-visible {
+
+  outline: 3px solid #7cb4ff;
+
+  outline-offset: 3px;
+
+}
+  
 }
