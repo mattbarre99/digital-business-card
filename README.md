@@ -1,6 +1,17 @@
 # digital-business-card
 Matteo Barresi — Digital Business Card
 
+Aggiornamento Business Card
+
+Add file → Upload files
+
+e sostituisci:
+
+business-card.png
+
+con quello nuovo.
+
+
 Modifica i link Wallet
 
 Apri:
