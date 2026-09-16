@@ -268,12 +268,13 @@ body {
 
 .back-image {
   display: block;
-  width: 100%;
+  width: 380px;
   height: auto;
-  max-width: 100%;
+  max-width: 30px;
 }
 
 .back-link:focus-visible {
   outline: 3px solid #7cb4ff;
   outline-offset: 3px;
 }
+  
