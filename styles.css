@@ -251,31 +251,32 @@ body {
   }
 
 /* =========================================
-   TORNA INDIETRO
+   TORNA INDIETRO (immagine SVG)
    ========================================= */
 
 .back-link {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: min(50%, 258px);
+  margin-top: 31px;
+  padding: 0;
+
   text-decoration: none;
   background: transparent;
   border: none;
-  padding: 0;
-  margin-top: 31px;
-  width: 150px;
-  height: auto;
 }
 
 .back-image {
   display: block;
-  width: 150px;   /* metà circa del .png-button (min 100%, 515px) */
-  height: auto;
+
+  width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 .back-link:focus-visible {
   outline: 3px solid #7cb4ff;
   outline-offset: 3px;
 }
-  
