@@ -256,8 +256,8 @@ body {
 
 .back-button {
 
-  width: min(100%, 180px);
-
+width: 150px;
+  
   min-height: 30px;
 
   margin-top: 14px;
