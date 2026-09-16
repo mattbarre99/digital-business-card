@@ -203,52 +203,10 @@ body {
 
 .wallet-link:focus-visible,
 .png-button:focus-visible {
-
   outline: 3px solid #7cb4ff;
-
   outline-offset: 3px;
-
 }
 
-
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 480px) {
-
-  .page {
-
-    padding-left: 12px;
-
-    padding-right: 12px;
-
-  }
-
-
-  .business-card {
-
-    width: min(320px, 100%);
-
-  }
-
-
-  .wallet-row {
-
-    width: min(100%, 380px);
-
-    gap: 10px;
-
-    margin-top: 20px;
-
-  }
-
-
-  .png-button {
-
-    margin-top: 32px;
-
-  }
 
 /* =========================================
    TORNA INDIETRO (immagine SVG)
@@ -260,7 +218,7 @@ body {
   justify-content: center;
 
   width: min(50%, 258px);
-  margin-top: 31px;
+  margin-top: 1px;
   padding: 0;
 
   text-decoration: none;
@@ -277,4 +235,32 @@ body {
 .back-link:focus-visible {
   outline: 3px solid #7cb4ff;
   outline-offset: 3px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .business-card {
+    width: min(320px, 100%);
+  }
+
+  .wallet-row {
+    width: min(100%, 380px);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .png-button {
+    margin-top: 32px;
+  }
+
 }
