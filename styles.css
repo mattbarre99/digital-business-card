@@ -264,13 +264,14 @@ body {
   padding: 0;
   margin-top: 31px;
   width: 150px;
+  height: auto;
 }
 
 .back-image {
   display: block;
-  width: 380px;
+  width: 150px;   /* metà circa del .png-button (min 100%, 515px) */
   height: auto;
-  max-width: 30px;
+  max-width: 100%;
 }
 
 .back-link:focus-visible {
