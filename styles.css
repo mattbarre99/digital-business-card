@@ -1,0 +1,260 @@
+:root {
+  --background: #ffffff;
+  --text: #000000;
+  --wallet-background: #050505;
+  --wallet-text: #ffffff;
+  --wallet-border: #8f8f8f;
+  --download-border: #111111;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+  min-height: 100svh;
+
+  background: var(--background);
+  color: var(--text);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.page {
+  width: 100%;
+
+  min-height: 100vh;
+  min-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding:
+    max(20px, env(safe-area-inset-top))
+    16px
+    max(20px, env(safe-area-inset-bottom));
+}
+
+
+/* =========================
+   BUSINESS CARD
+   ========================= */
+
+.business-card {
+  display: block;
+
+  width: min(320px, 100%);
+  height: auto;
+
+  aspect-ratio: 1.586 / 1;
+
+  object-fit: contain;
+
+  margin-top: 0;
+
+  border: 1px solid #cfcfcf;
+  border-radius: 15px;
+
+  background: #ffffff;
+}
+
+
+/* =========================
+   WALLET BUTTONS
+   ========================= */
+
+.wallet-row {
+  width: min(100%, 420px);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 16px;
+
+  margin-top: 26px;
+}
+
+.wallet-button {
+  min-height: 52px;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--wallet-border);
+
+  background: var(--wallet-background);
+  color: var(--wallet-text);
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 7px 13px;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.wallet-button:hover {
+  filter: brightness(1.08);
+}
+
+.wallet-button:active {
+  transform: translateY(1px);
+}
+
+.wallet-button:focus-visible,
+.png-button:focus-visible {
+  outline: 3px solid #7cb4ff;
+  outline-offset: 3px;
+}
+
+.wallet-icon {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+}
+
+.wallet-copy {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 1.05;
+
+  white-space: nowrap;
+}
+
+.wallet-copy small {
+  font-size: 11px;
+  font-weight: 400;
+
+  margin-bottom: 3px;
+}
+
+.wallet-copy strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   PNG BUTTON
+   ========================= */
+
+.png-button {
+  width: min(100%, 515px);
+
+  min-height: 36px;
+
+  margin-top: 43px;
+
+  border:
+    1px solid
+    var(--download-border);
+
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #000000;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+.png-button:hover {
+  background: #f7f7f7;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+  .page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .business-card {
+    width: min(320px, 100%);
+  }
+
+  .wallet-row {
+    width: min(100%, 380px);
+
+    gap: 10px;
+
+    margin-top: 20px;
+  }
+
+  .wallet-button {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    gap: 7px;
+  }
+
+  .wallet-icon {
+    width: 28px;
+    height: 28px;
+
+    flex-basis: 28px;
+  }
+
+  .wallet-copy small {
+    font-size: 10px;
+  }
+
+  .wallet-copy strong {
+    font-size: 12px;
+  }
+
+  .png-button {
+    margin-top: 32px;
+  }
+}
+
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .wallet-button {
+    transition: none;
+  }
+}
