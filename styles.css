@@ -81,7 +81,7 @@ body {
 
 /* WALLET */
 :root {
-  --wallet-width: 336px;
+  --wallet-width: 432px;
 }
 
 .wallet-label {
