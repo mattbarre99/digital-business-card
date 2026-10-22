@@ -80,18 +80,24 @@ body {
 }
 
 /* WALLET */
+:root {
+  --wallet-width: 336px;
+}
+
 .wallet-label {
+  width: min(100%, var(--wallet-width));
   margin: 26px 0 10px;
+  text-align: left;
   font-size: 13px;
   font-weight: 500;
   color: var(--muted);
 }
 
 .wallet-row {
-  width: min(100%, 420px);
+  width: min(100%, var(--wallet-width));
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 12px;
 }
 
 .wallet-link {
@@ -183,11 +189,6 @@ body {
   .page {
     padding-left: 12px;
     padding-right: 12px;
-  }
-
-  .wallet-row {
-    width: min(100%, 380px);
-    gap: 10px;
   }
 
   .png-button {
