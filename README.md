@@ -15,7 +15,7 @@ con quello nuovo.
 
 Modificare in autonomia il testo sopra il biglietto.
 
-Il testo è nel file index.html, nel blocco: header class="intro"
+Il testo è nel file index.html, nel blocco "<-- INTESTAZIONE -->"
 
 Sono tre righe, puoi cambiare solo ciò che sta tra i tag:
 
