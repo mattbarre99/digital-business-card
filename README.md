@@ -47,4 +47,4 @@ matteo-barresi.vcf
 
 e modifica la voce che ti interssa.
 
-Per modificare l'immagine in "PHOTO" e "LOGO" usa file .PNG e convertili in Base64 tramite questo tool: https://base64.guru/converter/encode/image/jpg
+Per modificare l'immagine in "PHOTO" e "LOGO" usa file .PNG e convertili in Base64 tramite questo tool: https://base64.guru/converter/encode/image/png
