@@ -121,7 +121,7 @@ body {
 .png-button {
   width: min(100%, 420px);
   min-height: 44px;
-  margin-top: 22px;
+  margin-top: 14px;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -148,6 +148,41 @@ body {
 
 .btn-icon {
   flex: none;
+}
+
+/* AGGIUNGI AI CONTATTI */
+.contact-button {
+  width: min(100%, 432px);
+  min-height: 52px;
+  margin-top: 22px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #ffffff;
+  color: var(--text);
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  transition: box-shadow 0.15s ease, transform 0.12s ease;
+}
+
+.contact-button:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-button:active {
+  transform: translateY(1px);
+}
+
+.contact-button:focus-visible {
+  outline: 3px solid #7cb4ff;
+  outline-offset: 3px;
 }
 
 /* TORNA INDIETRO */
@@ -189,6 +224,10 @@ body {
   .page {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .contact-button { 
+    width: min(100%, 380px); 
   }
 
   .png-button {
