@@ -31,14 +31,16 @@ Apri:
 wallet-config.js
 
 e da:
-const APPLE_WALLET_URL = "#";
-const GOOGLE_WALLET_URL = "#";
+
+-  const APPLE_WALLET_URL = " # ";
+
+-  const GOOGLE_WALLET_URL = " # ";
 
 passeremo a:
 
-const APPLE_WALLET_URL = "https://IL-TUO-LINK-APPLE";
+-  const APPLE_WALLET_URL = "https://IL-TUO-LINK-APPLE";
 
-const GOOGLE_WALLET_URL = "https://IL-TUO-LINK-GOOGLE";
+-  const GOOGLE_WALLET_URL = "https://IL-TUO-LINK-GOOGLE";
 
   -----------------------------------
 
